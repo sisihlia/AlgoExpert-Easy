@@ -20,5 +20,21 @@ class Program {
 		//System.out.println("Hello");
     return arr;
   }
+	
+ // O(nlongn) time | O(1) space.
+  public static int[] twoNumberSum(int[] array, int targetSum) {
+		Arrays.sort(array); //bublesort
+		int left=0; //the beginning of the array
+		int right=array.length-1; //the end of the array
+		for (int i=left; i< array.length;i++ ) {
+			int curr_sum=array[left]+array[right];
+			if(curr_sum<targetSum) left++;
+			if(curr_sum>targetSum) right--;
+			if (curr_sum==targetSum) {
+				return new int [] {array[left],array[right]};
+			}
+		}
+		return new int [0];
+  }
 }
 
