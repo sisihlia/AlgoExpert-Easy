@@ -1,8 +1,8 @@
 import java.util.*;
 
 class Program {
+  // O(n^2) time | O(1) space.
   public static int[] twoNumberSum(int[] array, int targetSum) {
-    // O(n^2) time | O(1) space.
 		int [] arr = new int [2];
 		if (array.length<2) return new int [0];
 		outerloop:
