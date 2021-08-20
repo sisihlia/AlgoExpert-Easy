@@ -9,7 +9,7 @@ class Program {
     // Write your code here.
 		String winningTeam="";
 		String winner="";
-	  winners.put(winner,0);
+	  winners.put(winner,0); // to initialize the winner is the hashmap. Otherwise the key is not found
 		for(int i=0; i<competitions.size(); i++) {
 			if(results.get(i) == 0) {
 				winningTeam=competitions.get(i).get(1);
